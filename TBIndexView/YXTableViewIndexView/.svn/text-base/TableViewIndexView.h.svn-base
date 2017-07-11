@@ -1,0 +1,24 @@
+//
+//  SMDTableViewIndexView.h
+//  Echo
+//
+//  Created by robu on 15/2/2.
+//  Copyright (c) 2015年 Static Ga. All rights reserved.
+//
+
+#import "RootCustomView.h"
+@protocol TableViewIndexViewDelegate;
+
+@interface TableViewIndexView : RootCustomView
+@property (strong,nonatomic) UITableView * tableView;
+@property (assign,nonatomic) id<TableViewIndexViewDelegate> tabelViewIndexViewDelegate;
+
+-(void)setIndexTitlesArray:(NSArray*)titlesArray;
+
+@end
+
+@protocol TableViewIndexViewDelegate <NSObject>
+
+- (void)tableViewSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index;
+
+@end
