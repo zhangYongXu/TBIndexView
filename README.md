@@ -1,3 +1,5 @@
+  # TBIndexView
+  
   1，UITableView的索引只有另个索引方法sectionIndexTitlesForTableView和sectionForSectionIndexTitle，第一个方法返回一个String数组,
   TableView就会依次显示在索引上。第二个方法是当点击到索引的第index个索引时,跳到哪一组。实现完这两个代理方法，TableView索引的功能就做完了，
   非常简单。
